@@ -4,6 +4,7 @@ import { Image } from 'react-native'
 
 export default function ResponsiveImage ({
   source,
+  style,
   initW,
   initH,
   width,
@@ -13,10 +14,13 @@ export default function ResponsiveImage ({
     return (
       <Image
         source={source}
-        style={{
-          width,
-          height: initH / initW * width,
-        }}
+        style={[
+          {
+            width,
+            height: initH / initW * width,
+          },
+          style,
+        ]}
       />
     )
   }
@@ -25,10 +29,13 @@ export default function ResponsiveImage ({
     return (
       <Image
         source={source}
-        style={{
-          width: initW / initH * height,
-          height,
-        }}
+        style={[
+          {
+            width: initW / initH * height,
+            height,
+          },
+          style,
+        ]}
       />
     )
   }
@@ -36,6 +43,7 @@ export default function ResponsiveImage ({
 
 ResponsiveImage.propTypes = {
   source: PropTypes.any,
+  style: PropTypes.any,
   initW: PropTypes.number,
   initH: PropTypes.number,
   width: PropTypes.number,
