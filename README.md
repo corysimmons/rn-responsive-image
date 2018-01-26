@@ -14,6 +14,7 @@ export default () => {
   return (
     <ResponsiveImage
       source={require(`../static/img/logo.png`)}
+      style={styles.myImg}
       initW={892}
       initH={273}
       width={200}
@@ -25,6 +26,7 @@ export default () => {
 ## API
 
 - `source` whatever you'd set `<Image />` to.
+- `style` y'know.
 - `initW` required. Initial width of raw image.
 - `initH` required. Initial height of raw image.
 - `width` **or** `height` required. Just one. Fixed number (sorry too busy for percentages right now).
