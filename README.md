@@ -8,12 +8,18 @@ Add ResponsiveImage.js to your project.
 ## Usage
 
 ```js
-<ResponsiveImage
-  source={require(`../static/img/logo.png`)}
-  initW={892}
-  initH={273}
-  width={200}
-/>
+import ResponsiveImage from '../utilities/ResponsiveImage'
+
+export default () => {
+  return (
+    <ResponsiveImage
+      source={require(`../static/img/logo.png`)}
+      initW={892}
+      initH={273}
+      width={200}
+    />
+  )
+}
 ```
 
 ## API
