@@ -3,7 +3,7 @@ Simple React Native responsive image component.
 
 ## Install
 
-Add ResponsiveImage.js to your project.
+Add `ResponsiveImage.js` to your project.
 
 ## Usage
 
